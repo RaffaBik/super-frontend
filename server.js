@@ -17,9 +17,11 @@ const server = http.createServer(function (request, response) {
 
 
 });
+var port = process.env.port || 3000;
+console.log("port = ", port);
 
-server.listen (3000); //звпуск сервера
+server.listen(port); //звпуск сервера
 console.log('Server started !');
 
 //если в брауэере набрать localhost:3000 в терминале отобразиться hello
-//по фавикону браузер запрашивает иконку сайта
+//по фавикону браузер запрашивает иконку сайт
